@@ -1,0 +1,154 @@
+fonts = "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
+
+gradient(start, stop)
+  background-color start
+  background-image -moz-linear-gradient(top, start 0%, stop 100%)
+  background-image -webkit-gradient(linear, left top, left bottom, color-stop(0%,start), color-stop(100%, stop))
+  background-image -webkit-linear-gradient(top, start 0%, stop 100%)
+  background-image -ms-linear-gradient(top, start 0%, stop 100%)
+  background-image -o-linear-gradient(top, start 0%, stop 100%)
+  background-image linear-gradient(to bottom, start 0%, stop 100%)
+  background-repeat repeat-x
+
+transition()
+  -webkit-transition arguments
+  -moz-transition arguments
+  -ms-transition arguments
+  -o-transition arguments
+  transition arguments
+
+body
+  font-family fonts
+  color #222
+  padding-bottom 60px
+
+.container
+  width 700px
+  margin 0 auto
+
+a
+  color #333
+
+h1, h2, h3
+  font-family "Bree Serif", fonts
+
+h1, h2
+  margin-top 1em
+  margin-bottom .5em
+
+p
+  line-height 1.5em
+
+.photo
+  width 320px
+  height 320px
+
+.content
+  position relative
+  padding 20px 0
+
+.banner
+  background-image url("/images/background.jpg")
+  background-repeat no-repeat
+  background-attachment fixed
+  background-position-x center
+
+  padding-bottom 210px
+
+  text-align center
+
+.logotext
+  font-size 48px
+  line-height 1.5em
+  letter-spacing 1px
+
+  margin 0
+
+  text-shadow 0 2px 2px rgba(0,0,0,0.5)
+
+  &, a
+    color #fff
+    text-decoration none
+
+.details
+  &, & a
+    color #fff
+    text-shadow 0 1px 2px rgba(0,0,0,0.5)
+
+  .large, .medium, .small
+    margin 0
+    margin-bottom 1em
+
+  .large, .medium
+    font-family "Bree Serif", fonts
+
+  .large
+    font-size 24px
+    font-weight bold
+    margin-bottom 1.5em
+
+  .medium, .small
+    font-family "Open Sans", fonts
+
+  .medium
+    font-weight 600
+    line-height 1.4em
+
+#date
+  position absolute
+  left 10px
+  top 233px
+
+#slogan
+  position absolute
+  left 500px
+  top 233px
+
+#register
+  position absolute
+  left 50%
+  margin-left -88px
+  top 160px
+
+  font-size 24px
+  font-weight bold
+  padding 70px 10px
+
+  gradient #ec5d59 #c33d36
+
+  border none
+  border-bottom 2px solid #94302a
+  text-shadow rgba(0,0,0,0.5) 0 2px 1px
+  border-radius 6px
+  border-radius 100px
+
+  font-weight bold
+  color #fff
+  text-decoration none
+
+  box-shadow 0 2px 12px 0 rgba(0,0,0,0.5)
+
+  &:hover
+    transition background-position .2s linear
+
+    background-position 0 -15px
+    background-color #c33d36
+
+.social
+  position absolute
+  top 360px
+  left 50%
+  margin-left -84px
+  padding 0
+
+  &, a
+    color #ccc
+
+  .fb-like, .twitter-share-button
+    vertical-align middle
+
+  .fb-like
+    margin-right 10px
+
+#map
+  float right
