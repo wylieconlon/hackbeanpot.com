@@ -150,3 +150,14 @@ p {
   margin-right: 40px;
   margin-bottom: 40px;
 }
+#comparison {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+#comparison thead {
+  font-weight: bold;
+}
+#comparison td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
