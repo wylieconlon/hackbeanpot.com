@@ -144,7 +144,11 @@ p {
 #map {
   float: right;
 }
-.sponsors a {
+#sponsors {
+  text-align: center;
+  margin: 1.6em 0;
+}
+#sponsors a {
   display: inline-block;
   margin-right: 40px;
   margin-bottom: 40px;
